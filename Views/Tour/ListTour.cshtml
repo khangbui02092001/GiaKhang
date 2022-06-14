@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Project_Travel.Models.Tour>
+
+@{
+    ViewBag.Title = "ListTour";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListTour</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenTour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayKhoiHanh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhuongTien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoNgayDi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenTour)
+        </td>
+        <td>
+            <img width="270px" src="@item.Hinh" alt="Alternate Text" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayKhoiHanh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhuongTien)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoNgayDi)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaTour }) |
+            @Html.ActionLink("Detail", "Detail", new { id=item.MaTour }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaTour })
+        </td>
+    </tr>
+}
+
+</table>

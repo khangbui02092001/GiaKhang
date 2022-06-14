@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MyData">
+  <DataContextMoniker Name="/MyDataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="70cb3766-652b-4369-b5d3-1a3956f20826" absoluteBounds="3.5, 1, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/MyDataDataContext/BangGia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be751768-8e78-4d43-be86-357f1662b976" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0bb226f-af50-4c93-b4b3-d229edf8b7e1" absoluteBounds="3.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/MyDataDataContext/DonHangDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dcb06793-5363-45af-a0c4-2742d1c08951" absoluteBounds="3.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08b7eb57-cbf5-4271-8c0a-b17486e7001b" absoluteBounds="6.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MyDataDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bcebecc-541a-4a93-b1e8-4a45accada37" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18a6efea-92ba-4a8e-b133-970893499fe7" absoluteBounds="0.75, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MyDataDataContext/Tour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ae436e4-5b98-42c1-bdcf-7ebe6e85dc19" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.98159912109375); (3.5 : 1.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyDataDataContext/Tour/Tour_BangGia" />
+      <nodes>
+        <classShapeMoniker Id="18a6efea-92ba-4a8e-b133-970893499fe7" />
+        <classShapeMoniker Id="70cb3766-652b-4369-b5d3-1a3956f20826" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
